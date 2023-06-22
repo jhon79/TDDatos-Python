@@ -12,7 +12,7 @@ def hello_world():
     return 'Hello World!'
 
 @app.route('/api/yahoo')
-def get_company():
+def get_compipany():
     #symbol = "DIS"
     symbol = request.args.get('ticker')
     if symbol is None:
