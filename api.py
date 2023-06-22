@@ -19,5 +19,5 @@ def get_compipany():
         return Response(json.dumps({"error": "missing 'ticker' query-parameter"}), status=400, mimetyp='application/json')
     return Response(json.dumps(get_company_information(symbol)),status=200, mimetype='application/json')
 
-if __name__ == '__main__':
-    app.run()
+#if __name__ == '__main__':
+#    app.run()
