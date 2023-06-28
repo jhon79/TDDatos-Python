@@ -9,10 +9,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return 'Tratamiento de Datos'
 
 @app.route('/api/yahoo')
-def get_compipany():
+def get_company():
     #symbol = "DIS"
     symbol = request.args.get('ticker')
     if symbol is None:
@@ -20,4 +20,4 @@ def get_compipany():
     return Response(json.dumps(get_company_information(symbol)),status=200, mimetype='application/json')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=5000, debug=True)

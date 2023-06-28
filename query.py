@@ -1,3 +1,8 @@
+#Integrantes:
+#Sandra Gómez
+#Juan Ibadango
+
+
 import requests
 
 symbol = "DIS" # Ticker Disney
